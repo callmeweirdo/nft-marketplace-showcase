@@ -12,6 +12,7 @@ import { Box, Container, Typography } from "@mui/material";
 import assets from "../public/assets";
 
 import { AssessmentTwoTone } from "@mui/icons-material";
+import Fotter from "../components/Fotter";
 export default function Home() {
   return (
     <Box>
@@ -52,7 +53,7 @@ export default function Home() {
         <Download />
       </main>
 
-      {/* <footer className={styles.footer}></footer> */}
+      <Fotter />
     </Box>
   );
 }
