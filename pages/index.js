@@ -32,7 +32,7 @@ export default function Home() {
         />
         <SectionWrapper
           title="Smart User Interface Marketplace"
-          description="Experience a butery Ui of ProfNef NFT MarketPlace. Smooth Constant colors of a fluent Ui design "
+          description="Experience a butery Ui of OG App NFT MarketPlace. Smooth Constant colors of a fluent Ui design "
           mockupImg={assets.homeCards}
           reverse
         />

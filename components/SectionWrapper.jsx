@@ -16,14 +16,7 @@ const SectionWrapper = ({ description, banner, title, showBtn, mockupImg, revers
       }}
       className={`${banner}`}
     >
-      <Container
-        maxWidth="lg"
-        maxHeight="lg"
-        sx={
-          {
-          }
-        }
-      >
+      <Container maxWidth="lg" maxHeight="lg" sx={{}}>
         <Box>
           <Grid
             container
@@ -31,22 +24,27 @@ const SectionWrapper = ({ description, banner, title, showBtn, mockupImg, revers
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
-              flexDirection: ` ${reverse ?  "row-reverse"  : "row" }`
+              flexDirection: ` ${reverse ? "row-reverse" : "row"}`,
             }}
           >
-            <Grid item sm={12} lg={5} sx={{ textAlign: "left", color: `${reverse ? "black" : "white"}`
-           }}>
+            <Grid
+              item
+              sm={12}
+              lg={5}
+              sx={{
+                textAlign: "left",
+                color: `${reverse ? "black" : "white"}`,
+              }}
+            >
               <Box sx={{ p: { sm: 5 } }}>
                 <Typography sx={{ font: "bold" }} variant="h3">
                   {title}
                 </Typography>
-                <Typography my={3}>
-                  {description}
-                </Typography>
+                <Typography my={3}>{description}</Typography>
                 {showBtn && (
                   <Button
                     assetUrl={assets.expo}
-                    link="deployed nft marketplace rn "
+                    link="https://github.com/callmeweirdo/nft-marketplace-showcase"
                   />
                 )}
               </Box>
